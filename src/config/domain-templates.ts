@@ -207,6 +207,7 @@ export const domainTemplates: DomainTemplate[] = [
    {
      pattern: /megacdn\.co$/i,
      headers: {
+       'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0',
        'accept': '*/*',
        'accept-language': 'en-US,en;q=0.5',
        'sec-fetch-dest': 'empty',
