@@ -218,8 +218,8 @@ export const domainTemplates: DomainTemplate[] = [
      },
      headersFn: (url: URL) => {
        return {
-         'origin': 'https://videostr.net',
-         'referer': 'https://videostr.net/',
+         'origin': 'https://kerolaunochan.online/',
+         'referer': 'https://kerolaunochan.online/',
        };
      }
    },
