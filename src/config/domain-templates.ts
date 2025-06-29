@@ -203,6 +203,24 @@ export const domainTemplates: DomainTemplate[] = [
      }
    },
 
+   
+   {
+     pattern: /megacdn\.co$/i,
+     headers: {
+       'accept': '*/*',
+       'accept-language': 'en-US,en;q=0.5',
+       'sec-fetch-dest': 'empty',
+       'sec-fetch-mode': 'cors',
+       'sec-fetch-site': 'cross-site',
+     },
+     headersFn: (url: URL) => {
+       return {
+         'origin': 'https://videostr.net',
+         'referer': 'https://videostr.net/',
+       };
+     }
+   },
+   
   // smartinvestmentstrategies.xyz
   {
     pattern: /smartinvestmentstrategies\.xyz$/i,
@@ -298,23 +316,7 @@ export const domainTemplates: DomainTemplate[] = [
     }
   },
    
-   {
-     pattern: /f8\.megacdn\.co$/i,
-     headers: {
-       'accept': '*/*',
-       'accept-language': 'en-US,en;q=0.5',
-       'sec-fetch-dest': 'empty',
-       'sec-fetch-mode': 'cors',
-       'sec-fetch-site': 'cross-site',
-     },
-     headersFn: (url: URL) => {
-       return {
-         'origin': 'https://videostr.net',
-         'referer': 'https://videostr.net/',
-       };
-     }
-   },
-  
+   
   // dewbreeze84.online
   {
     pattern: /dewbreeze84\.online$/i,
