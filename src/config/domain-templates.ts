@@ -299,7 +299,7 @@ export const domainTemplates: DomainTemplate[] = [
   },
    
    {
-     pattern: /f8\.megacdn\.co:2228$/i,
+     pattern: /f8\.megacdn\.co$/i,
      headers: {
        'accept': '*/*',
        'accept-language': 'en-US,en;q=0.5',
