@@ -185,6 +185,23 @@ export const domainTemplates: DomainTemplate[] = [
       };
     }
   },
+   
+   {
+     pattern: /mia\.vidjoy\.wtf$/i,
+     headers: {
+       'accept': '*/*',
+       'accept-language': 'en-US,en;q=0.5',
+       'sec-fetch-dest': 'empty',
+       'sec-fetch-mode': 'cors',
+       'sec-fetch-site': 'cross-site',
+     },
+     headersFn: (url: URL) => {
+       return {
+         'origin': 'https://vidsrc.wtf',
+         'referer': 'https://vidsrc.wtf/',
+       };
+     }
+   },
 
   // smartinvestmentstrategies.xyz
   {
