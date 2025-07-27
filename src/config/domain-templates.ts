@@ -85,6 +85,7 @@ export const domainTemplates: DomainTemplate[] = [
        'sec-fetch-dest': 'empty',
        'sec-fetch-mode': 'cors',
        'sec-fetch-site': 'cross-site',
+       'host': 'mistydawn62.pro'
      },
      headersFn: (url: URL) => {
        return {
