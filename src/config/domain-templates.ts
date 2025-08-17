@@ -1367,7 +1367,7 @@ export const domainTemplates: DomainTemplate[] = [
       },
    
    {
-     pattern: /https:\/\/oca-worker\.kendrickl-3amar\.workers\.dev$/i,
+     pattern: /oca-worker\.kendrickl-3amar\.workers\.dev$/i,
      headers: {
        'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0',
        'accept': '*/*',
@@ -1382,7 +1382,7 @@ export const domainTemplates: DomainTemplate[] = [
          'referer': 'https://xprime.tv/',
        };
      }
-   }
+   },
   
   // General default template
   {
