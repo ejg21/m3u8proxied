@@ -1313,7 +1313,7 @@ export const domainTemplates: DomainTemplate[] = [
          'referer': 'https://fmoviesunblocked.net/',
        };
      }
-   }
+   },
 
   // twitch CDN
   {
