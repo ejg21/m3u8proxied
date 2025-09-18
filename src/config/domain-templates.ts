@@ -57,6 +57,30 @@ export const domainTemplates: DomainTemplate[] = [
        };
      }
    },
+   
+   // try to fix moveonjoy m3u8s
+   
+   {
+     // matches any host that is exactly "moveonjoy.com" or any subdomain like "fl3.moveonjoy.com"
+     pattern: /(?:^|\.)moveonjoy\.com$/i,
+     headers: {
+       'user-agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0',
+       'accept': '*/*',
+       'accept-language': 'en-US,en;q=0.5',
+       'accept-encoding': 'gzip, deflate, br',
+       'connection': 'keep-alive',
+       'sec-fetch-dest': 'empty',
+       'sec-fetch-mode': 'cors',
+       'sec-fetch-site': 'cross-site',
+     },
+     headersFn: (url: URL) => {
+       // set both Origin and Referer as requested
+       return {
+         'origin': 'https://joygoapp.com',
+         'referer': 'https://joygoapp.com/aes/userkey.php',
+       };
+     }
+   },
 
    
    {
